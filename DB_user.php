@@ -1,7 +1,7 @@
 <?php
 require 'DB_connect.php';
 // object Creation for DB_connect
-$db = new DB_connect($host='hostname',$user='UserName',$pass='UserPassword',$db='DatabaseName');
+$db = new DB_connect($host='HostName',$user='UserName',$pass='UserPassword',$db='DatabaseName');
 // create table
 $createTable= $db->createTable($tableName='user',$values='id INT PRIMARY KEY AUTO_INCREMENT, userName VARCHAR(30) NOT NULL,password VARCHAR(30) NOT NULL, email VARCHAR(30) UNIQUE'); 															echo "Table Created !";
 // insert row
